@@ -1,9 +1,12 @@
-import AppRouter from "./Components/AppRouter/AppRouter";
-
+import AppRouter from "./AppRouter/AppRouter";
+import { AnimatePresence } from "framer-motion";
 function App() {
   return (
     <>
+    <AnimatePresence mode="wait">
     <AppRouter/>
+    </AnimatePresence>
+    
      
     </>
   )

@@ -5,8 +5,10 @@ import Lottie from "lottie-react";
 import img from '/winners2.png'
 import animationData from '../../../src/Lottie/donation.json';
 import { useState } from "react";
-import Index from "../DasnboardContent/Index";
+import transition from "../../transition";
 import { useNavigate } from "react-router-dom";
+
+
 const LoginPage = () => {
      const history = useNavigate();
       const [iterations, setIterations] = useState(0);
@@ -40,7 +42,7 @@ const LoginPage = () => {
                 <HiOutlineMail className="absolute text-lg  mt-4 mx-4" />
                 <input
                   className="w-full relative border-2  focus:outline-none focus:border-red-200 bg-transparent  px-12 border-gray-300 rounded-full p-3 border-solid "
-                  placeholder="Enter Your Email/Phone nuumber"
+                  placeholder="Enter Your Email/Phone number"
                 />
               </figure>
 
@@ -58,7 +60,7 @@ const LoginPage = () => {
               </Space>
               <button className="w-full border-2 font-serif bg-red-600 opacity-90 hover:opacity-70 text-white border-gray-300 rounded-full p-3 border-solid" onClick={(e)=>{
                 e.preventDefault()
-               history("/Index"); }}>
+               history("/OfferingForm"); }}>
                 Sign In
               </button>
             </form>
@@ -78,4 +80,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default transition(LoginPage);

@@ -1,0 +1,10 @@
+{
+      "Payments":[
+            {
+                  "paymentId":"1",
+                  "amount":"Three thousand naira",
+                  "date":"5/4/23",
+                  "serviceType":"Sunday Service"
+            }
+      ]
+}
